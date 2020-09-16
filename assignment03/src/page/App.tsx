@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../template/Header';
 import Content from '../template/Content';
+import Footer from '../template/Footer';
+
 import 'antd/dist/antd.css';
 
 interface State {
@@ -11,8 +13,11 @@ interface State {
     content: string;
     buttons: Array<string>;
   }>;
+  FooterArray: Array<{
+    title: string;
+    subtitle: Array<string>;
+  }>;
 }
-
 interface Props {}
 
 class App extends React.Component<Props, State> {
@@ -62,12 +67,36 @@ class App extends React.Component<Props, State> {
         buttons: ['구성원 내 권한 관리', '채용 절차법', '서버, 데이터 보안'],
       },
     ],
+    FooterArray: [
+      {
+        title: '기능소개',
+        subtitle: [
+          '지원자 관리',
+          '채용 준비',
+          '지원자 평가 도구',
+          '자동화',
+          '커스텀 브랜딩',
+          '보안 및 채용절차법',
+        ],
+      },
+
+      {
+        title: '요금 안내',
+        subtitle: [],
+      },
+
+      {
+        title: '도입 문의',
+        subtitle: [],
+      },
+    ],
   };
   render() {
     return (
       <div>
         <Header />
         <Content ElementArray={this.state.ElementArray} />
+        <Footer FooterArray={this.state.FooterArray} />
       </div>
     );
   }

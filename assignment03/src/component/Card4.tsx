@@ -2,11 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import ViewCard from '../style/ViewCard';
 
+const BreakPoint = 1024;
+
 const Card = styled(ViewCard)`
   padding-top: 150px;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
+  padding-left: 111px;
+  padding-right: 111px;
+  @media only screen and (max-width: ${BreakPoint}px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 `;
 const Contentbox = styled.div`
   display: flex;

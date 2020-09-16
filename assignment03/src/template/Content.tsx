@@ -17,17 +17,9 @@ interface Props {
     buttons: Array<string>;
   }>;
 }
-const Wrapper = styled.div`
-  padding-right: 111px;
-  padding-left: 111px;
-  @media only screen and (max-width: ${BreakPoint}px) {
-    padding-right: 61px;
-    padding-left: 60px;
-  }
-`;
 const Content: React.FC<Props> = Props => {
   return (
-    <Wrapper>
+    <div>
       <Card1 />
       <Card2 />
       {Props.ElementArray.map((content, index) => (
@@ -35,7 +27,7 @@ const Content: React.FC<Props> = Props => {
       ))}
       <Card4 />
       <Card5 />
-    </Wrapper>
+    </div>
   );
 };
 

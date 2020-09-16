@@ -14,7 +14,6 @@ const Card = styled(ViewCard)`
 `;
 const CardDetail = styled.div`
   flex: 1 1 1;
-  display: block;
   width: 820px;
 `;
 const LargeText = styled.div`

@@ -9,6 +9,7 @@ const HeaderWrapper = styled.div`
   padding-top: 33px;
   background-color: #ffffff;
   width: 100%;
+  z-index: 5;
 `;
 const Header = () => {
   return (

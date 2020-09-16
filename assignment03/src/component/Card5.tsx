@@ -11,6 +11,7 @@ const Card = styled(ViewCard)`
   background-color: #f8f6f6;
   justify-content: center;
   align-items: center;
+  z-index: -3;
 `;
 const LargeTextbox = styled.div`
   font-size: 41px;
@@ -24,6 +25,7 @@ const MediumTextBox = styled.div`
 `;
 const BtnWrapper = styled(ButtonWrapper)`
   padding-top: 56px;
+  z-index: 0;
 `;
 const MyButton = styled(Button)`
   width: 209px;
@@ -31,6 +33,7 @@ const MyButton = styled(Button)`
   margin-left: 17px;
   margin-right: 17px;
   font-size: 20px;
+  z-index: -1;
 `;
 
 const Card5 = () => {

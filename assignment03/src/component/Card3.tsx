@@ -20,7 +20,6 @@ const Card = styled(ViewCard)`
   justify-content: center;
   align-items: center;
 `;
-
 const GrayBox = styled.div`
   order: 1;
   width: 630px;
@@ -29,7 +28,6 @@ const GrayBox = styled.div`
     0 9px 28px 8px rgba(0, 0, 0, 0.05);
   background-color: #f3f3f3;
 `;
-
 const DetailWrapper = styled.div`
   height: 451px;
   margin-right: 64px;
